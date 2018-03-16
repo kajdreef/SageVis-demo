@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    </head>
+
+    <body>
+        <nav id="navigation" class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> <a class="navbar-brand" href="#">Phase Visualisation</a> </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Hierarchical Structure of the program</a></li>
+						<li><a href="questionnaire.html">Questionnaire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <div id='trace-selector' class="form-group">
+                            <label for="sel1">Trace Selector</label>
+                            <p>
+                                Choose a script to visualize in the selector below.
+                            </p>
+                            <select class="form-control" id="t-selector" form-control=""></select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10">
+                        <h2>Hierchical view of the phases</h2>
+                        <div id="visualisation"></div>
+
+                        <p>
+                            The user can interact in 3 ways with the visualisation:
+                            <ul>
+                                <li>Zooming: By using a touchpad or mouse the user can zoom in by scrolling or zoom by making a two finger scroll movement on your trackpad.</li>
+                                <li>Dragging: By clicking and holding the user can drag the bar from the left to the right (only if already zoomed in)</li>
+                                <li>Clicking: It the user clicks on the bottom part of a phase then the user can see the lower levels.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../lib/jquery-3.1.0.js"></script>
+        <script src="../lib/bootstrap.js"></script>
+        <script src="../js/example.js"></script>
+
+    </body>
+
+</html>
