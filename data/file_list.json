@@ -1,4 +1,5 @@
 [
-	"selectedjavactestcases_serial.java_fpm.json",
-	"nanoxml_addchild1_fpm.json"
+	"javac-serial.json",
+	"javac-enum2.json",
+	"nanoxml-addchild1.json"
 ]
